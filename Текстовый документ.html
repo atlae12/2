@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Преподаватели — Список</title>
+    <style>
+        /* Ключевые кадры для появления */
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            width: 90%;
+            max-width: 450px;
+            /* Анимация появления всего блока */
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        h1 { color: #333; text-align: center; }
+
+        ul { list-style: none; padding: 0; }
+
+        li {
+            margin: 15px 0;
+            padding: 15px;
+            border-radius: 10px;
+            background: #fff;
+            border: 1px solid #eee;
+            /* Плавный переход для ховера */
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+
+        /* Эффект при наведении на пункт списка */
+        li:hover {
+            transform: scale(1.03);
+            box-shadow: 0 5px 15px rgba(0,123,255,0.2);
+            border-color: #007bff;
+        }
+
+        .teacher-link {
+            text-decoration: none;
+            color: #007bff;
+            font-size: 18px;
+            font-weight: bold;
+            display: block;
+        }
+
+        .dept { color: #888; font-size: 13px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>👨‍🏫 Преподаватели</h1>
+    <ul>
+        <li>
+            <a href="переходник.html" class="teacher-link">Иванов Иван Иванович</a>
+            <span class="dept">Кафедра высшей математики</span>
+        </li>
+        <li>
+            <a href="petrov.html" class="teacher-link">Петров Петр Петрович</a>
+            <span class="dept">Кафедра общей физики</span>
+        </li>
+    </ul>
+</div>
+
+</body>
+</html>
